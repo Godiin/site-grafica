@@ -58,3 +58,19 @@ footer {
   text-align: center;
   padding: 15px;
 }
+/* Estilo para as imagens do portfólio */
+.portfolio-img {
+  width: 200px;                /* largura padrão */
+  height: auto;                /* altura automática para manter proporção */
+  margin: 10px;                /* espaço entre as imagens */
+  border-radius: 10px;         /* cantos arredondados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra suave */
+  transition: transform 0.3s, box-shadow 0.3s; /* transições suaves */
+  cursor: pointer;
+}
+
+/* Efeito ao passar o mouse */
+.portfolio-img:hover {
+  transform: scale(1.05);      /* aumenta um pouco */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* sombra mais intensa */
+}
