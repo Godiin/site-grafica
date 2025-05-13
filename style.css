@@ -21,7 +21,37 @@ section {
   padding: 40px 20px;
   border-bottom: 1px solid #ccc;
 }
-
+.botoes-contato {
+  margin-top: 20px;
+}
+.botao {
+  display: inline-block;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+.botao.whatsapp {
+  background-color: #25D366;
+}
+.botao.whatsapp:hover {
+  background-color: #1ebe5d;
+}
+.botao.instagram {
+  background-color: #E1306C;
+}
+.botao.instagram:hover {
+  background-color: #c2265c;
+}
+.botao.google {
+  background-color: #4285F4;
+}
+.botao.google:hover {
+  background-color: #3367d6;
+}
 footer {
   background-color: #003366;
   color: white;
