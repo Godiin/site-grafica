@@ -23,13 +23,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Simulador de orçamento
-function mostrarPreco() {
-  const valor = document.getElementById("servico").value;
-  document.getElementById("preco").innerText = `Preço: R$${valor},00`;
+document.addEventListener("DOMContentLoaded", () => {
+  const elementos = document.querySelectorAll(".fade-in");
+  const observer = new IntersectionObserver(entradas => {
+    entradas.forEach(entrada => {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add("visible");
+      }
+    });
+  });
+
+  let posicaoAtual = 0;
+
+function moverCarrossel(direcao) {
+  const carrossel = document.getElementById("carrossel-imagens");
+  const imagens = carrossel.querySelectorAll("img");
+  const largura = imagens[0].clientWidth + 16; // incluindo gap
+  const total = imagens.length;
+
+  posicaoAtual += direcao;
+
+  // Loop infinito (opcional)
+  if (posicaoAtual < 0) posicaoAtual = total - 1;
+  if (posicaoAtual >= total) posicaoAtual = 0;
+
+  carrossel.style.transform = `translateX(-${posicaoAtual * largura}px)`;
 }
 
-// Confirmação de clique nos botões
-function confirmarAcesso(msg) {
-  alert(msg);
-}
+  elementos.forEach(el => observer.observe(el));
+});

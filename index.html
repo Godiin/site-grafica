@@ -39,21 +39,14 @@ Conte com a gente — seu projeto começa aqui!</p>
       <li>plastificação</li>
       <li>Encadernação</li>
       <li>Personalizados</li>
-      <li>Banners e faixas</li>
+      <li>Banners</li>
       <li>Cartões de visita</li>
       <li>Folders e panfletos</li>
       <li>Trabalhos escolares</li>
       <li>Consulta na internet</li>
       <li>Produção de documentos</li>
       <li>Manutenção e formatação de computadores</li>
-    </ul>
-    <!-- Simulador -->
-  <select id="servico">
-    <option value="10">Cartão de visita - R$10</option>
-    <option value="20">Banner - R$20</option>
-  </select>
-  <button onclick="mostrarPreco()">Calcular</button>
-  <p id="preco"></p>
+    </ul>  
   </section>
 
   <section id="sobre">
@@ -69,17 +62,22 @@ Mesmo sonhando alto — com o objetivo de um dia se tornar um profissional de ci
 A ROGY Info é mais que uma gráfica. É o começo de um legado. E você faz parte dele. 💛</p>
   </section>
 
-  <section id="portfolio">
+  <section class="carrossel-container">
     <h2>Portfólio</h2>
     <p>Veja alguns de nossos trabalhos.</p>
-    <!-- Você pode adicionar imagens aqui -->
-     <img src="./imagens/cartao_maes1.png" alt="lembraça dia das mães" class="portfolio-img">
-     <img src="./imagens/cartao_maes2.png" alt="lembraça dia das mães" class="portfolio-img">
-     <img src="./imagens/cartao_maes3.png" alt="lembraça dia das mães" class="portfolio-img">
-     <img src="./imagens/cartao_maes4.png" alt="lembraça dia das mães" class="portfolio-img">
-     <img src="./imagens/certificado.jpeg" alt="Certificados" class="portfolio-img">
-     <img src="./imagens/polaroid.jpeg" alt="Polaroid" class="portfolio-img">
-     <img src="./imagens/adesivo5x5.png" alt="Adesivo_5x5" class="portfolio-img">
+    <div class="carrossel">
+      
+      <div class="carrossel-imagens" id="carrossel-imagens"></div>
+        <img src="./imagens/cartao_maes1.png" alt="lembraça dia das mães" class="portfolio-img">
+        <img src="./imagens/cartao_maes2.png" alt="lembraça dia das mães" class="portfolio-img">
+        <img src="./imagens/cartao_maes3.png" alt="lembraça dia das mães" class="portfolio-img">
+        <img src="./imagens/cartao_maes4.png" alt="lembraça dia das mães" class="portfolio-img">
+        <img src="./imagens/certificado.jpeg" alt="Certificados" class="portfolio-img">
+        <img src="./imagens/polaroid.jpeg" alt="Polaroid" class="portfolio-img">
+        <img src="./imagens/adesivo5x5.png" alt="Adesivo_5x5" class="portfolio-img">
+      </div>
+      <button class="btn-nav left" onclick="moverCarrossel(-1)">&#10094;</button>
+      <button class="btn-nav right" onclick="moverCarrossel(1)">&#10095;</button>
   </section>
   <button id="btnTopo" onclick="voltarAoTopo()">↑ Topo</button>
 
