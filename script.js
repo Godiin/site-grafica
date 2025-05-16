@@ -1,8 +1,13 @@
-// Mostrar botão de voltar ao topo
-window.onscroll = () => {
-  document.getElementById("btnTopo").style.display = window.scrollY > 200 ? "block" : "none";
-};
 
+document.addEventListener("DOMContentLoaded", () => {
+// Mostrar botão de voltar ao topo
+  window.onscroll = () => {
+    const btn = document.getElementById("btnTopo").style.display = window.scrollY > 200 ? "block" : "none";
+    if (btn) {
+      btn.style.display = window.scrollY > 200 ? "block" : "none";
+    }
+  };
+});
 // Voltar suavemente ao topo
 function voltarAoTopo() {
   window.scrollTo({ top: 0, behavior: "smooth" });

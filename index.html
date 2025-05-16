@@ -47,6 +47,13 @@ Conte com a gente — seu projeto começa aqui!</p>
       <li>Produção de documentos</li>
       <li>Manutenção e formatação de computadores</li>
     </ul>
+    <!-- Simulador -->
+  <select id="servico">
+    <option value="10">Cartão de visita - R$10</option>
+    <option value="20">Banner - R$20</option>
+  </select>
+  <button onclick="mostrarPreco()">Calcular</button>
+  <p id="preco"></p>
   </section>
 
   <section id="sobre">
@@ -74,13 +81,14 @@ A ROGY Info é mais que uma gráfica. É o começo de um legado. E você faz par
      <img src="./imagens/polaroid.jpeg" alt="Polaroid" class="portfolio-img">
      <img src="./imagens/adesivo5x5.png" alt="Adesivo_5x5" class="portfolio-img">
   </section>
+  <button id="btnTopo" onclick="voltarAoTopo()">↑ Topo</button>
 
   <section id="contato">
     <h2>Contato</h2>
     <div class="botoes-contato">
       <a href="https://wa.me/5591993408837?text=Olá%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Gráfica%20XYZ!" 
          class="botao whatsapp" 
-         target="_blank">
+         target="_blank" onclick="confirmarAcesso('Abrindo WhatsApp...')">
          📱 Fale conosco pelo WhatsApp
       </a>
 
