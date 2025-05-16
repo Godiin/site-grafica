@@ -156,19 +156,15 @@ footer {
 }
 
 .carrossel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  max-width: 100%;
   overflow: hidden;
-  margin-top: 1rem;
+  width: 100%;
+  position: relative;
 }
 
 .carrossel-imagens {
   display: flex;
   transition: transform 0.4s ease-in-out;
-  gap: 1rem;
+  will-change: transform;
 }
 
 .carrossel-imagens img {
@@ -191,4 +187,11 @@ footer {
 
 .btn-nav:hover {
   background: #005fa3;
+}
+
+.botoes-carrossel {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
