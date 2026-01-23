@@ -1,115 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gráfica Rápida ROGY info.</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilha Color | Gráfica Rápida</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Gráfica Rápida ROGY info.</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#contato">Contato</a>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Ilha <span>Color</span></h1>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato" class="btn">Orçamento</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="home">
-    <h2>Bem-vindo à Gráfica ROGY info!</h2>
-    <p>Seja bem-vindo à ROGY Info!
-Somos uma gráfica rápida feita para transformar suas ideias em realidade com agilidade, qualidade e aquele toque criativo que faz a diferença. Aqui você encontra soluções personalizadas para o dia a dia, projetos especiais e tudo o que precisa para comunicar com estilo.
-Conte com a gente — seu projeto começa aqui!</p>
-  </section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h2>Sua ideia impressa com mais <span>cor</span></h2>
+      <p>Impressões rápidas com qualidade profissional para sua marca e eventos.</p>
 
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <ul>
-      <li>banners</li>
-      <li>Canecas</li>
-      <li>Crachás</li>
-      <li>Convites</li>
-      <li>Boletos</li>
-      <li>Polaroid</li>
-      <li>Adesivos</li>
-      <li>Fotos 3x4</li>
-      <li>plastificação</li>
-      <li>Encadernação</li>
-      <li>Personalizados</li>
-      <li>Banners</li>
-      <li>Cartões de visita</li>
-      <li>Folders e panfletos</li>
-      <li>Trabalhos escolares</li>
-      <li>Consulta na internet</li>
-      <li>Produção de documentos</li>
-      <li>Manutenção e formatação de computadores</li>
-    </ul>  
-  </section>
-
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>A ROGY Info nasceu de um sonho — daqueles que começam pequenos, mas carregam um propósito enorme. O nome curioso? É o nome do fundador Ygor, escrito ao contrário. Uma forma simples e simbólica de mostrar que a caminhada começou de dentro pra fora: com identidade, coragem e vontade de fazer diferente.
-
-Apaixonado por informática desde criança e vindo de uma família de empreendedores, Ygor cresceu entre máquinas, trabalho e dedicação. Sempre observou com admiração o esforço de sua mãe, que trabalha sozinha para sustentar a casa com trabalho honesto e determinação. Inspirado por isso, decidiu criar seu próprio caminho — unindo a agilidade da tecnologia com a criatividade do design gráfico.
-
-Assim nasceu a ROGY Info, uma gráfica rápida com alma jovem, pronta para entregar mais que impressões: queremos entregar resultados, beleza e acolhimento. Aqui, cada cartão, banner ou arte carrega não só tinta, mas também carinho, atenção aos detalhes e respeito pelo cliente.
-
-Mesmo sonhando alto — com o objetivo de um dia se tornar um profissional de cibersegurança — Ygor sabe que cada etapa importa. E essa, a primeira, está sendo construída com humildade, talento e fé.
-
-A ROGY Info é mais que uma gráfica. É o começo de um legado. E você faz parte dele. 💛</p>
-  </section>
-
-  <section class="carrossel-container">
-    <h2>Portfólio</h2>
-    <p>Veja alguns de nossos trabalhos.</p>
-    <div class="carrossel">
-      
-      <div class="carrossel-imagens" id="carrossel-imagens"></div>
-        <img src="./imagens/cartao_maes1.png" alt="lembraça dia das mães" class="portfolio-img">
-        <img src="./imagens/cartao_maes2.png" alt="lembraça dia das mães" class="portfolio-img">
-        <img src="./imagens/cartao_maes3.png" alt="lembraça dia das mães" class="portfolio-img">
-        <img src="./imagens/cartao_maes4.png" alt="lembraça dia das mães" class="portfolio-img">
-        <img src="./imagens/certificado.jpeg" alt="Certificados" class="portfolio-img">
-        <img src="./imagens/polaroid.jpeg" alt="Polaroid" class="portfolio-img">
-        <img src="./imagens/adesivo5x5.png" alt="Adesivo_5x5" class="portfolio-img">
+      <div class="hero-buttons">
+        <a href="#" class="btn">Orçamento no WhatsApp</a>
+        <a href="#servicos" class="btn-outline">Ver serviços</a>
       </div>
-      <div class="botoes-carrossel">
-  <button class="btn-nav left" onclick="moverCarrossel(-1)">‹</button>
-  <button class="btn-nav right" onclick="moverCarrossel(1)">›</button>
-</div>
-  <button id="btnTopo" onclick="voltarAoTopo()">↑ Topo</button>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <div class="botoes-contato">
-      <a href="https://wa.me/5591993408837?text=Olá%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Gráfica%20XYZ!" 
-         class="botao whatsapp" 
-         target="_blank" onclick="confirmarAcesso('Abrindo WhatsApp...')">
-         📱 Fale conosco pelo WhatsApp
-      </a>
-
-      <a href="https://www.instagram.com/rogy_info.ofc/" 
-         class="botao instagram" 
-         target="_blank">
-         📸 Siga-nos no Instagram
-      </a>
-
-      <a href="https://g.co/kgs/krxt1Cn" 
-         class="botao google" 
-         target="_blank">
-         🌟 Avalie-nos no Google
-      </a>
+      <div class="diferenciais">
+        <span>✔ Impressão rápida</span>
+        <span>✔ Qualidade profissional</span>
+        <span>✔ Atendimento local</span>
+      </div>
     </div>
-    <p>Email: rogyinfo.grafica@gmail.com</p>
-    <p>Telefone: (91) 99340-8837</p>
   </section>
 
-  <footer>
-    <p>© 2025 59.373.284 Gráfica Rápida Rogy info. - Todos os direitos reservados.</p>
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="section">
+    <h3>Nossos Serviços</h3>
+    <div class="grid">
+      <div class="card">Cartões de Visita</div>
+      <div class="card">Panfletos & Flyers</div>
+      <div class="card">Banners & Faixas</div>
+      <div class="card">Adesivos & Rótulos</div>
+      <div class="card">Encadernações</div>
+      <div class="card">Outros Serviços</div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section id="portfolio" class="section bg">
+    <h3>Nossos Trabalhos</h3>
+    <div class="grid portfolio">
+      <div class="img-box">Imagem</div>
+      <div class="img-box">Imagem</div>
+      <div class="img-box">Imagem</div>
+      <div class="img-box">Imagem</div>
+      <div class="img-box">Imagem</div>
+      <div class="img-box">Imagem</div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <h3>Sobre a Ilha Color</h3>
+    <p class="sobre-texto">
+      A Ilha Color é uma gráfica rápida localizada em Mosqueiro – Belém/PA,
+      especializada em impressões com qualidade, agilidade e atendimento próximo.
+    </p>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="contato" class="cta">
+    <h3>Pronto para imprimir sua ideia?</h3>
+    <p>Solicite seu orçamento agora mesmo.</p>
+    <a href="#" class="btn">Falar no WhatsApp</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>📍 Mosqueiro – Belém/PA</p>
+    <p>📞 WhatsApp: (xx) xxxxx-xxxx</p>
+    <p>📷 Instagram: @ilhacolor</p>
+    <small>© 2026 Ilha Color – Todos os direitos reservados</small>
   </footer>
-<script src="script.js"></script>
+
 </body>
 </html>
