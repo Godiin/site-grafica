@@ -45,10 +45,15 @@ body {
   padding: 15px 0;
 }
 
-.logo {
-  color: var(--azul-ilha);
+.logo img {
+  max-height: 55px;
 }
 
+@media (max-width: 768px) {
+  .logo img {
+    max-height: 45px;
+  }
+}
 .logo span {
   color: var(--rosa-tropical);
 }
@@ -137,41 +142,39 @@ nav a:hover {
 /* =========================
    SEÇÕES
 ========================= */
-.section {
-  padding: 70px 10%;
-  text-align: center;
+.servicos {
+  margin-top: 40px;
 }
 
-.section h3 {
-  margin-bottom: 35px;
-  font-size: 2rem;
-  color: var(--azul-ilha);
-}
-
-.bg {
-  background: var(--cinza-claro);
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-/* CARDS */
-.card {
-  padding: 30px 20px;
+.servico-card {
   background: var(--branco);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.card:hover {
+.servico-card:hover {
+  transform: translateY(-6px);
   border-bottom: 5px solid var(--amarelo-sol);
-  transform: translateY(-4px);
-  transition: 0.3s;
+}
+
+.servico-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.servico-card h4 {
+  color: var(--azul-ilha);
+  margin: 15px;
+  font-size: 1.1rem;
+}
+
+.servico-card p {
+  margin: 0 15px 20px;
+  font-size: 0.95rem;
+  color: var(--preto);
 }
 
 /* PORTFÓLIO */
