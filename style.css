@@ -27,15 +27,21 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+  min-height: 100px;
+}
+.logo {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #ffffff;
 }
 .logo img {
-  max-height: 85px;
+  height: 90px;
   width: auto;
 }
 
 @media (max-width: 768px) {
   .logo img {
-    height: 65px;
+    height: 60px;
   }
 }
 .logo span {
